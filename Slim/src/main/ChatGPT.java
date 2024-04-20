@@ -28,7 +28,7 @@ public class ChatGPT {
 		
     }
 	
-	public static String askChatGPT(String prompt) {
+	public static String callAPI(String prompt) {
 		
 		prompt = removeEscapeCharacters(prompt);
 		
@@ -66,7 +66,7 @@ public class ChatGPT {
 		
 	}
 	
-	public static void askChatGPTPrintResponse(String prompt) {
+	public static void callAPIPrintResponse(String prompt) {
 		
 		prompt = removeEscapeCharacters(prompt);
 		
@@ -93,7 +93,7 @@ public class ChatGPT {
         }
 	}
 	
-	public static String askChatGPTArray(ArrayList<String> contents) {
+	public static String callAPIArray(ArrayList<String> contents) {
 		
 		String messages = "";
 		
@@ -143,7 +143,7 @@ public class ChatGPT {
 	
 	public static void main(String[] args) {
     	
-		askChatGPTPrintResponse("hello");
+		// callAPIPrintResponse("hello");
 		
     }
 	
