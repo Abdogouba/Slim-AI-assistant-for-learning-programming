@@ -10,6 +10,8 @@ import org.json.JSONObject;
 
 public class ChatGPT {
 	
+	private static final String OPENAI_API_KEY = "YOUR_API_KEY_HERE";
+	
 	public static String removeEscapeCharacters(String input) {
         
 		input = input.replaceAll("\r", "(backslash r was here)");
@@ -40,7 +42,7 @@ public class ChatGPT {
                 .url("https://api.openai.com/v1/chat/completions")
                 .post(body)
                 .addHeader("Content-Type", "application/json")
-                .addHeader("Authorization", "Bearer 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") // Replace YOUR_API_KEY with your actual OpenAI API key
+                .addHeader("Authorization", "Bearer " + OPENAI_API_KEY) // Replace YOUR_API_KEY with your actual OpenAI API key
                 .build();
 
         try {
@@ -78,7 +80,7 @@ public class ChatGPT {
                 .url("https://api.openai.com/v1/chat/completions")
                 .post(body)
                 .addHeader("Content-Type", "application/json")
-                .addHeader("Authorization", "Bearer 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") // Replace YOUR_API_KEY with your actual OpenAI API key
+                .addHeader("Authorization", "Bearer " + OPENAI_API_KEY) // Replace YOUR_API_KEY with your actual OpenAI API key
                 .build();
 
         try {
@@ -115,7 +117,7 @@ public class ChatGPT {
                 .url("https://api.openai.com/v1/chat/completions")
                 .post(body)
                 .addHeader("Content-Type", "application/json")
-                .addHeader("Authorization", "Bearer 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") // Replace YOUR_API_KEY with your actual OpenAI API key
+                .addHeader("Authorization", "Bearer " + OPENAI_API_KEY) // Replace YOUR_API_KEY with your actual OpenAI API key
                 .build();
 
         try {
