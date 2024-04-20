@@ -465,7 +465,7 @@ public class Main {
 			prompt = "Imagine that you are a programming tutor, explain to me " + concept + " in details, use " + tech + " in your explanation, my level of experience on a scale of 1 to 10 (1 = knows nothing, 10 = knows everything) in " + tech + " is " + level + ", include practical coding examples in your explanation, also tell me if there are prerequisites to understand " + concept + " well, finally, provide me with links to resources explaining this topic for more information.";
 		else
 			prompt = "Imagine that you are a programming tutor, explain to me " + concept + " in details, I want to learn " + concept + " to use it in " + usage + ", use " + tech + " in your explanation, my level of experience on a scale of 1 to 10 (1 = knows nothing, 10 = knows everything) in " + tech + " is " + level + ", include practical coding examples in your explanation, also tell me if there are prerequisites to understand " + concept + " well, finally, provide me with links to resources explaining this topic for more information.";
-			
+        
         String response = ChatGPT.askChatGPT(prompt);
         System.out.println("\n" + response + "\n");
         

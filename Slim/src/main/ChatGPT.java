@@ -10,7 +10,8 @@ import org.json.JSONObject;
 
 public class ChatGPT {
 	
-	private static final String OPENAI_API_KEY = "YOUR_API_KEY_HERE";
+	private static final String OPENAI_API_KEY = "sk-proj-pMpd0FlemE5coyCre3pCT3BlbkFJDa4DYpjBGigdofmeTpq3";
+	private static final String OPENAI_API_MODEL = "gpt-3.5-turbo";
 	
 	public static String removeEscapeCharacters(String input) {
         
@@ -37,7 +38,7 @@ public class ChatGPT {
 		            .build();
 
         MediaType mediaType = MediaType.parse("application/json");
-        RequestBody body = RequestBody.create(mediaType, "{\"model\": \"gpt-3.5-turbo\", \"messages\": [{\"role\": \"user\", \"content\": \"" + prompt + "\"}]}");
+        RequestBody body = RequestBody.create(mediaType, "{\"model\": \"" + OPENAI_API_MODEL + "\", \"messages\": [{\"role\": \"user\", \"content\": \"" + prompt + "\"}]}");
         Request request = new Request.Builder()
                 .url("https://api.openai.com/v1/chat/completions")
                 .post(body)
@@ -75,7 +76,7 @@ public class ChatGPT {
 	            .build();
 
         MediaType mediaType = MediaType.parse("application/json");
-        RequestBody body = RequestBody.create(mediaType, "{\"model\": \"gpt-3.5-turbo\", \"messages\": [{\"role\": \"user\", \"content\": \"" + prompt + "\"}]}");
+        RequestBody body = RequestBody.create(mediaType, "{\"model\": \"" + OPENAI_API_MODEL + "\", \"messages\": [{\"role\": \"user\", \"content\": \"" + prompt + "\"}]}");
         Request request = new Request.Builder()
                 .url("https://api.openai.com/v1/chat/completions")
                 .post(body)
@@ -112,7 +113,7 @@ public class ChatGPT {
 		            .build();
 
         MediaType mediaType = MediaType.parse("application/json");
-        RequestBody body = RequestBody.create(mediaType, "{\"model\": \"gpt-3.5-turbo\", \"messages\": [" + messages + "]}");
+        RequestBody body = RequestBody.create(mediaType, "{\"model\": \"" + OPENAI_API_MODEL + "\", \"messages\": [" + messages + "]}");
         Request request = new Request.Builder()
                 .url("https://api.openai.com/v1/chat/completions")
                 .post(body)
@@ -142,7 +143,7 @@ public class ChatGPT {
 	
 	public static void main(String[] args) {
     	
-		
+		// askChatGPTPrintResponse("hello");
 		
     }
 	
