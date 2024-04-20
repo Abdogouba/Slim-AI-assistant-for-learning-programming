@@ -143,7 +143,7 @@ public class ChatGPT {
 	
 	public static void main(String[] args) {
     	
-		// no askChatGPTPrintResponse("hello");
+		// askChatGPTPrintResponse("hello");
 		
     }
 	
