@@ -10,7 +10,7 @@ import org.json.JSONObject;
 
 public class ChatGPT {
 	
-	private static final String OPENAI_API_KEY = "sk-proj-pMpd0FlemE5coyCre3pCT3BlbkFJDa4DYpjBGigdofmeTpq3";
+	private static final String OPENAI_API_KEY = "your api key here";
 	private static final String OPENAI_API_MODEL = "gpt-3.5-turbo";
 	
 	public static String removeEscapeCharacters(String input) {
